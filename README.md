@@ -58,10 +58,3 @@ git clone https://github.com/adijha1304/ItemHierarchyApp.git
 cd ItemHierarchyApp
 dotnet restore
 dotnet run
-
----
-
-👤 Author
-
-Aditya Jha (AJ)
-🎓 B.Tech in AI & ML
