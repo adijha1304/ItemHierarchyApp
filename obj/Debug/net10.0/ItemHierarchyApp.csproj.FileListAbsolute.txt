@@ -250,3 +250,4 @@
 /Users/aditya/ItemHierarchyApp/obj/Debug/net10.0/ItemHierarchyApp.genruntimeconfig.cache
 /Users/aditya/ItemHierarchyApp/obj/Debug/net10.0/ref/ItemHierarchyApp.dll
 /Users/aditya/ItemHierarchyApp/obj/Debug/net10.0/compressed/fcn1qt7lxz-{0}-rpx273vtxz-rpx273vtxz.gz
+/Users/aditya/ItemHierarchyApp/obj/Debug/net10.0/ItemHierarchyApp.sourcelink.json

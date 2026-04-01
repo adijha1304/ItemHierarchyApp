@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ItemHierarchyApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1d0b148282f412c30c16bb643c1064496a9c488e")]
 [assembly: System.Reflection.AssemblyProductAttribute("ItemHierarchyApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ItemHierarchyApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
