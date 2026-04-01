@@ -1,0 +1,52 @@
+@model IEnumerable<ItemHierarchyApp.Models.Item>
+
+<h2>Items Tree View</h2>
+
+<style>
+    ul { list-style-type: none; padding-left: 20px; }
+    .toggle { cursor: pointer; font-weight: bold; }
+    .children { display: none; margin-left: 15px; }
+</style>
+
+@functions {
+    public void RenderTree(IEnumerable<ItemHierarchyApp.Models.Item> items)
+    {
+        if (items == null) return; // ✅ prevent null error
+
+        <ul>
+        @foreach (var item in items)
+        {
+            <li>
+                @if (item.Children != null && item.Children.Any())
+                {
+                    <span class="toggle">@item.Name (@(item.Weight))</span>
+                    <div class="children">
+                        @{ RenderTree(item.Children); }  <!-- ✅ call recursively safely -->
+                    </div>
+                }
+                else
+                {
+                   @(item.Name + " (" + item.Weight + ")")
+                }
+            </li>
+        }
+        </ul>
+    }
+}
+
+@{ RenderTree(Model); }
+
+<a href="/Item/Index">Back to List</a>
+
+<script>
+    document.querySelectorAll('.toggle').forEach(function(el) {
+        el.addEventListener('click', function() {
+            var childrenDiv = el.nextElementSibling;
+            if (childrenDiv.style.display === 'none' || childrenDiv.style.display === '') {
+                childrenDiv.style.display = 'block';
+            } else {
+                childrenDiv.style.display = 'none';
+            }
+        });
+    });
+</script> 

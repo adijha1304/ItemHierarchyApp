@@ -1,0 +1,23 @@
+@model IEnumerable<ItemHierarchyApp.Models.Item>
+
+<h2>Processed Items (Children Only)</h2>
+
+<table border="1" cellpadding="5">
+    <tr>
+        <th>Name</th>
+        <th>Weight</th>
+        <th>Parent ID</th>
+    </tr>
+
+@foreach (var item in Model)
+{
+    <tr>
+        <td>@item.Name</td>
+        <td>@(item.Weight)</td>
+        <td>@item.ParentId</td>
+    </tr>
+}
+
+</table>
+
+<a href="/Item/Index">Back to List</a>
