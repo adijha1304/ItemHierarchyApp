@@ -59,7 +59,6 @@ cd ItemHierarchyApp
 dotnet restore
 dotnet run
 
-👤 Author
+## 👤 Author
 
-Aditya Jha (AJ)
-🎓 B.Tech in AI & ML
+Aditya Jha (AJ) B.Tech in AI & ML
