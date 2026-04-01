@@ -61,5 +61,7 @@ dotnet run
 
 ---
 
-👤 Author
-Aditya Jha (AJ) B.Tech in AI & ML
+## 👤 Author
+
+**Aditya Jha (AJ)**
+B.Tech in AI & ML
